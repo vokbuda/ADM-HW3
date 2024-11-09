@@ -1,2 +1,2 @@
-Name	Street	City	Postal code	Country	Price	Cuisine	Description	Services	Payments	Telephone	Links
+restaurantName	address	City	postalCode	country	priceRange	cuisineType	description	facilitiesServices	creditCards	phoneNumber	website
 Lo Stornello	via Cavour 35	Stresa	28838	Italy	€€	Mediterranean Cuisine, Modern Cuisine	Offering quality and professionalism in a tourist setting, this small restaurant is popular with locals as well as visitors. The menu focuses on imaginatively presented Mediterranean cuisine.	['Air conditioning', 'Terrace']	['American Express credit card', ' Credit card / Debit card accepted', ' Mastercard credit card', ' Visa credit card']	+39 0323 30444	https://www.ristorantelostornello-stresa.it

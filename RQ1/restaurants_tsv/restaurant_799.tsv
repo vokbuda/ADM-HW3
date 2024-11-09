@@ -1,2 +1,2 @@
-Name	Street	City	Postal code	Country	Price	Cuisine	Description	Services	Payments	Telephone	Links
+restaurantName	address	City	postalCode	country	priceRange	cuisineType	description	facilitiesServices	creditCards	phoneNumber	website
 Stella d'Italia	piazza Carlo Alberto 25	Pastrengo	37010	Italy	€€	Classic Cuisine, Country cooking	Regional specialities, including snails and pike, in a historical establishment, once an inn now an elegant establishment under the management of Signor Umberto.	['Garden or park', 'Terrace']	['American Express credit card', ' Credit card / Debit card accepted', ' Diners Club credit card', ' Mastercard credit card', ' Visa credit card']	+39 045 717 0034	https://www.stelladitalia.it/

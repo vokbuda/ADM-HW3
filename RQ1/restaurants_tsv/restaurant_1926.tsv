@@ -1,2 +1,2 @@
-Name	Street	City	Postal code	Country	Price	Cuisine	Description	Services	Payments	Telephone	Links
+restaurantName	address	City	postalCode	country	priceRange	cuisineType	description	facilitiesServices	creditCards	phoneNumber	website
 Scola	via Pennavaire 166	Castelbianco	17030	Italy	€€€	Creative	Instead of the simple, rustic-style dishes you might expect at this restaurant, the cuisine is actually elaborate and of the highest quality – an excellent reason for venturing out here!	['Car park', 'Interesting wine list', 'Terrace']	['American Express credit card', ' Credit card / Debit card accepted', ' Diners Club credit card', ' Mastercard credit card', ' Visa credit card']	+39 0182 77015	https://www.scola1926.it/

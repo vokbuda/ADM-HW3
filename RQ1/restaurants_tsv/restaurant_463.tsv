@@ -1,2 +1,2 @@
-Name	Street	City	Postal code	Country	Price	Cuisine	Description	Services	Payments	Telephone	Links
+restaurantName	address	City	postalCode	country	priceRange	cuisineType	description	facilitiesServices	creditCards	phoneNumber	website
 La Ferrata	via Gorizia 7	Pordenone	33170	Italy	€€	Regional Cuisine	Copper pots and lids and photos of locomotives adorn the walls of this friendly and welcoming trattoria. Enjoy generous portions of local specialities, including delicious snails cooked in butter.	['Air conditioning']	['American Express credit card', ' Credit card / Debit card accepted', ' Maestro', ' Mastercard credit card', ' Visa credit card']	+39 0434 20562	

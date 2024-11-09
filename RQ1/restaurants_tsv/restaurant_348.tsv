@@ -1,2 +1,2 @@
-Name	Street	City	Postal code	Country	Price	Cuisine	Description	Services	Payments	Telephone	Links
+restaurantName	address	City	postalCode	country	priceRange	cuisineType	description	facilitiesServices	creditCards	phoneNumber	website
 Li Jalantuùmene	piazza de Galganis 9	Monte Sant'Angelo	71037	Italy	€€€	Apulian, Modern Cuisine	This rustic restaurant is faithful to the culinary traditions of the area, with an added spirit of discovery. It is located in a charming square. Pleasant outdoor area for summertime.	['Terrace']	['American Express credit card', ' Credit card / Debit card accepted', ' Diners Club credit card', ' Mastercard credit card', ' Visa credit card']	+39 0884 565484	https://www.li-jalantuumene.it/
