@@ -6,11 +6,10 @@ import nltk
 from collections import defaultdict
 
 # Scarica le risorse necessarie
-nltk.download('punkt')
-nltk.download('stopwords')
+
 
 # Percorsi dei file e cartelle
-DATA_FOLDER = '/Users/fabrizioferrara/Desktop/Progetti DataScience/ADM/michelin_scraper/michelin_restaurant_data'
+DATA_FOLDER = 'michelin_restaurant_data'
 VOCAB_FILE = 'vocabulary.csv'  
 INDEX_FILE = 'inverted_index.json'  
 
@@ -85,6 +84,9 @@ def execute_query(query, vocabulary, inverted_index):
 # Funzione principale
 if __name__ == "__main__":
     # Carica vocabolario e indice invertito
+    nltk.download('punkt')
+    nltk.download('wordnet')
+    nltk.download('omw-1.4')
     vocabulary = load_vocabulary(VOCAB_FILE)
     inverted_index = load_inverted_index(INDEX_FILE)
     

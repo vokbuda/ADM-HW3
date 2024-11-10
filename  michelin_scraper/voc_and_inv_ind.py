@@ -7,10 +7,10 @@ from collections import defaultdict
 import csv
 
 # Percorsi dei file e cartelle
-DATA_FOLDER = '/Users/fabrizioferrara/Desktop/Progetti DataScience/ADM/michelin_scraper/michelin_restaurant_data'
+DATA_FOLDER = 'restaurants_tsv'
 VOCAB_FILE = 'vocabulary.csv'  
 INDEX_FILE = 'inverted_index.json'  
-DESCRIPTIONS_FILE = '/Users/fabrizioferrara/Desktop/Progetti DataScience/ADM/michelin_scraper/cleaned_descriptions.txt'
+DESCRIPTIONS_FILE = 'cleaned_descriptions.txt'
 
 # Funzione per preprocessare i termini
 def preprocess_text(text):
@@ -29,7 +29,6 @@ def create_vocabulary_and_index(descriptions_file):
         for doc_id, line in enumerate(file, start=1):
             filename, cleaned_description = line.strip().split("\t")
             terms = preprocess_text(cleaned_description)
-
             for term in terms:
                 if term not in vocabulary:
                     vocabulary[term] = term_id_counter
@@ -37,7 +36,9 @@ def create_vocabulary_and_index(descriptions_file):
                 term_id = vocabulary[term]
                 
                 if doc_id not in inverted_index[term_id]:
-                    inverted_index[term_id].append(doc_id)
+                    #if filename == "restaurant_1544.tsv" and term=='modern':  # Salta le righe vuote
+                    num_file=filename.replace('.tsv','').split('_')[1]
+                    inverted_index[term_id].append(num_file)
 
     print(f"\nTotale termini unici nel vocabolario: {len(vocabulary)}")
     print(f"Totale documenti processati: {doc_id}")
