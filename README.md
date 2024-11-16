@@ -6,9 +6,9 @@ We answered research questions (RQs) about [Michelin restaurants](https://guide.
 
 The repository consists of the following folders/files:
 1. __`RQ1`__:
-    > get_ursl.py is a file which gets all urls and saves it into file `.txt`.
-    > get_html.py saves source code into related `.html` file
-    > extract_info.py is a file which gets information related to each restaurant and saves it into tsv files
+    > `get_ursl.py` is a file which gets all urls and saves it into file `.txt`.<br>
+    > `get_html.py` saves source code into related `.html` file<br>
+    > `extract_info.py` is a file which gets information related to each restaurant and saves it into tsv files
 2. __`RQ2`__:
      
 
