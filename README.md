@@ -23,6 +23,6 @@ The repository consists of the following folders/files:
     > 
 
     **Algorithmic Question (AQ)**
-    >
+    > `AQ.ipynb` is a file where we solve AQ question
 4. __`LICENSE`__: 
 > This project is licensed under the [MIT License](./LICENSE).
