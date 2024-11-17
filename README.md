@@ -10,6 +10,10 @@ The repository consists of the following folders/files:
     > `get_html.py` saves source code into related `.html` file<br>
     > `extract_info.py` is a file which gets information related to each restaurant and saves it into tsv files
 2. __`RQ2`__:
+   2. **RQ2**:
+
+- **2.0.0preprocessing.py**:  
+  This script processes the `.tsv` files generated in RQ1. It adds a new column with cleaned and preprocessed descriptions. The output is saved in the folder `processed_files`, containing one processed file per restaurant.
      
 
 
