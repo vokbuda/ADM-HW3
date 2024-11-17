@@ -15,6 +15,8 @@ The repository consists of the following folders/files:
     - `2.1.2execute_query.py` is a file that runs a conjunctive query on the preprocessed restaurant data, using a previously generated vocabulary and inverted index.
     - `2.2.1tfidf_index.py` is a file that calculates Term Frequency-Inverse Document Frequency (TF-IDF) scores for terms in preprocessed restaurant descriptions and builds an             inverted index based on those scores. The output file is `tfidf_inverted_index.json`.
     - `2.2.2ranked_query.py` is a file that implements a ranked search engine for Michelin restaurants, based on TF-IDF scores and cosine similarity between the query and                 preprocessed documents.
+2. __`RQ3`__:  
+    - `3custom_score.py` is a file that implements a custom-ranked search engine for Michelin restaurants. It combines TF-IDF scores with a personalized ranking score based on             additional factors, such as cuisine type, price range, and services.
 
      **Research Questions:**
     1. **[RQ1]**: Data collection (crawl, scraper, parser)  
