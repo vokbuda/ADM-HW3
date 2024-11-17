@@ -10,8 +10,8 @@ The repository consists of the following folders/files:
     > `get_html.py` saves source code into related `.html` file<br>
     > `extract_info.py` is a file which gets information related to each restaurant and saves it into tsv files
 2. __`RQ2`__:
-    - `2.0.0preprocessing.py` is a file that processes the `.tsv` files generated in RQ1. It adds a new column with cleaned and preprocessed descriptions. The output is saved in         the folder `processed_files`, containing one processed file per restaurant.
-     
+    - `2.0.0preprocessing.py` is a file that processes the `.tsv` files generated in RQ1. It adds a new column containing cleaned and preprocessed descriptions. The output is             saved in the `processed_files` folder, with one processed file per restaurant.
+    - `2.1.1voc_and_inv_ind.py` is a file that builds a vocabulary and an inverted index from TSV files containing preprocessed Michelin restaurant descriptions. The output files         are `vocabulary.csv` and `inverted_index.json`.
 
 
      **Research Questions:**
