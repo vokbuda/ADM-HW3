@@ -17,6 +17,13 @@ The repository consists of the following folders/files:
     - `2.2.2ranked_query.py` is a file that implements a ranked search engine for Michelin restaurants, based on TF-IDF scores and cosine similarity between the query and                 preprocessed documents.
 2. __`RQ3`__:  
     - `3custom_score.py` is a file that implements a custom-ranked search engine for Michelin restaurants. It combines TF-IDF scores with a personalized ranking score based on             additional factors, such as cuisine type, price range, and services.
+  
+2. __`RQ4`__:
+    - `4.1unique_locations.py` is a script that extracts unique combinations of restaurant names and cities from the preprocessed Michelin restaurant files. The output file is             `unique_locations.csv`.
+    - `4.2get_regions.py` is a script that associates each unique city in the `unique_locations.csv` file with its corresponding Italian region using the Nominatim API from                 OpenStreetMap. The final output file is `city_to_region_final.csv`.
+    - `4.3cities_to_region_with_coordinates.py` is a script that adds geographical coordinates (latitude and longitude) to each city and region in the `city_to_region_final.csv`         file using the Nominatim API from OpenStreetMap. The output file is `city_to_region_with_coordinates.csv`.
+    - `4.4coord_and_priceRange.py` is a script that adds the price range (priceRange) associated with each restaurant to the `city_to_region_with_coordinates.csv` file. The output         file is `city_to_region_with_prices.csv`.
+    - `4.5map.py` is a script that implements the search engine from RQ3. The results are displayed on an interactive map of Italy, with markers colored based on the price range.         The output files are `top_k_restaurants.csv` and `italy_restaurant_map_with_legend.html`.
 
      **Research Questions:**
     1. **[RQ1]**: Data collection (crawl, scraper, parser)  
