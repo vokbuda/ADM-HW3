@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1ac696191ff38948f082dd736818598d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed; 
+                bottom: 50px; left: 50px; width: 150px; height: 150px; 
+                background-color: white; z-index:9999; font-size:14px;
+                border:2px solid grey; padding: 10px;">
+        <h4>Price Range Legend</h4>
+        <i style="color:green">●</i> € - Inexpensive<br>
+        <i style="color:blue">●</i> €€ - Moderate<br>
+        <i style="color:orange">●</i> €€€ - Expensive<br>
+        <i style="color:red">●</i> €€€€ - Very Expensive
+    </div>
+    
+    
+            <div class="folium-map" id="map_1ac696191ff38948f082dd736818598d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1ac696191ff38948f082dd736818598d = L.map(
+                "map_1ac696191ff38948f082dd736818598d",
+                {
+                    center: [41.8719, 12.5674],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_da3e222abd9a994a0aa7becdc18dee39 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_da3e222abd9a994a0aa7becdc18dee39.addTo(map_1ac696191ff38948f082dd736818598d);
+        
+    
+            var marker_2684d22d173a7d58cef69bcb1a9f1a50 = L.marker(
+                [37.5023612, 15.0873718],
+                {}
+            ).addTo(map_1ac696191ff38948f082dd736818598d);
+        
+    
+            var icon_b124bf3f30f114391075034cd28868b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2684d22d173a7d58cef69bcb1a9f1a50.setIcon(icon_b124bf3f30f114391075034cd28868b9);
+        
+    
+        var popup_126ecc56ef0ffb4a60ef1849ae99f6c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfb3446d80fb27d2b4ec12280cb88447 = $(`<div id="html_cfb3446d80fb27d2b4ec12280cb88447" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Ménage<br><b>City:</b> Catania<br><b>Region:</b> Sicilia<br><b>Price Range:</b> €€</div>`)[0];
+                popup_126ecc56ef0ffb4a60ef1849ae99f6c5.setContent(html_cfb3446d80fb27d2b4ec12280cb88447);
+            
+        
+
+        marker_2684d22d173a7d58cef69bcb1a9f1a50.bindPopup(popup_126ecc56ef0ffb4a60ef1849ae99f6c5)
+        ;
+
+        
+    
+    
+            var marker_7f9f7783341fd81c82d4b2901620d4f0 = L.marker(
+                [41.8933203, 12.4829321],
+                {}
+            ).addTo(map_1ac696191ff38948f082dd736818598d);
+        
+    
+            var icon_c007f299ad90d1c462bf5ec8df31a779 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7f9f7783341fd81c82d4b2901620d4f0.setIcon(icon_c007f299ad90d1c462bf5ec8df31a779);
+        
+    
+        var popup_3d441459450c56c02968bedf086e6dd3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efe1ff1d5988d4bb195824f0e502ede9 = $(`<div id="html_efe1ff1d5988d4bb195824f0e502ede9" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Il Sanlorenzo<br><b>City:</b> Rome<br><b>Region:</b> Lazio<br><b>Price Range:</b> €€€€</div>`)[0];
+                popup_3d441459450c56c02968bedf086e6dd3.setContent(html_efe1ff1d5988d4bb195824f0e502ede9);
+            
+        
+
+        marker_7f9f7783341fd81c82d4b2901620d4f0.bindPopup(popup_3d441459450c56c02968bedf086e6dd3)
+        ;
+
+        
+    
+    
+            var marker_7540947ba912e14a7701718258918749 = L.marker(
+                [45.637181, 9.876759],
+                {}
+            ).addTo(map_1ac696191ff38948f082dd736818598d);
+        
+    
+            var icon_a234e29f302bef78166075d368bd91ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7540947ba912e14a7701718258918749.setIcon(icon_a234e29f302bef78166075d368bd91ff);
+        
+    
+        var popup_2341aa4827d9cce05e0b1f16c4e1cc75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25c739e7120d4ebd57672f42cf99448e = $(`<div id="html_25c739e7120d4ebd57672f42cf99448e" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Vino Buono<br><b>City:</b> Grumello del Monte<br><b>Region:</b> Lombardia<br><b>Price Range:</b> €€</div>`)[0];
+                popup_2341aa4827d9cce05e0b1f16c4e1cc75.setContent(html_25c739e7120d4ebd57672f42cf99448e);
+            
+        
+
+        marker_7540947ba912e14a7701718258918749.bindPopup(popup_2341aa4827d9cce05e0b1f16c4e1cc75)
+        ;
+
+        
+    
+    
+            var marker_f3d6a668fb15747b90e2c13251c3a3f8 = L.marker(
+                [45.4641943, 9.1896346],
+                {}
+            ).addTo(map_1ac696191ff38948f082dd736818598d);
+        
+    
+            var icon_a66d3e7922db9c89a15896db51d4f2d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f3d6a668fb15747b90e2c13251c3a3f8.setIcon(icon_a66d3e7922db9c89a15896db51d4f2d5);
+        
+    
+        var popup_5c8f06b28928ca4332bf09107ff73785 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_044e94afdeb4d1e9cf820ce665076dbf = $(`<div id="html_044e94afdeb4d1e9cf820ce665076dbf" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> uovodiseppia Milano<br><b>City:</b> Milan<br><b>Region:</b> Lombardia<br><b>Price Range:</b> €€€</div>`)[0];
+                popup_5c8f06b28928ca4332bf09107ff73785.setContent(html_044e94afdeb4d1e9cf820ce665076dbf);
+            
+        
+
+        marker_f3d6a668fb15747b90e2c13251c3a3f8.bindPopup(popup_5c8f06b28928ca4332bf09107ff73785)
+        ;
+
+        
+    
+</script>
+</html>
