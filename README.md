@@ -1,6 +1,6 @@
 # ADM-HW3 Homework 3 - Michelin restaurants in Italy
 This repository contains the solution of the third homework of the Algorithmic Methods of Data Mining course.
-We answered research questions (RQs) about [Michelin restaurants](https://guide.michelin.com/en/it/restaurants) dataset, in order to preprocess data and make some analysis related to these restaurants.
+We answered questions (Qs) about [Michelin restaurants](https://guide.michelin.com/en/it/restaurants) dataset, in order to preprocess data and make some analysis related to these restaurants.
 
 
 
