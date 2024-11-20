@@ -23,7 +23,7 @@ The repository consists of the following folders/files:
     - `4.2get_regions.py` is a script that associates each unique city in the `unique_locations.csv` file with its corresponding Italian region using the Nominatim API from                 OpenStreetMap. The final output file is `city_to_region_final.csv`.
     - `4.3cities_to_region_with_coordinates.py` is a script that adds geographical coordinates (latitude and longitude) to each city and region in the `city_to_region_final.csv`         file using the Nominatim API from OpenStreetMap. The output file is `city_to_region_with_coordinates.csv`.
     - `4.4coord_and_priceRange.py` is a script that adds the price range (priceRange) associated with each restaurant to the `city_to_region_with_coordinates.csv` file. The output         file is `city_to_region_with_prices.csv`.
-    - `4.5map.py` is a script that implements the search engine from Q3. The results are displayed on an interactive map of Italy, with markers colored based on the price range.         The output files are `top_k_restaurants.csv` and `italy_restaurant_map_with_legend.html`. to view the map faster you can access this link directly file:///Users/fabrizioferrara/Desktop/Q1-2-3-4-AQ/italy_restaurant_map_with_legend.html
+    - `4.5map.py` is a script that implements the search engine from Q3. The results are displayed on an interactive map of Italy, with markers colored based on the price range.         The output files are `top_k_restaurants.csv` and `italy_restaurant_map_with_legend.html`. to view the map faster you can access this link directly:                     file:///Users/fabrizioferrara/Desktop/1-2-3-4-AQ/italy_restaurant_map_with_legend.html
 
 
     **Algorithmic Question (AQ)**
