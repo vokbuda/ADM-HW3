@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a8607bd72355e9044389d91d7925b7d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div style="position: fixed; 
+                bottom: 50px; left: 50px; width: 150px; height: 150px; 
+                background-color: white; z-index:9999; font-size:14px;
+                border:2px solid grey; padding: 10px;">
+        <h4>Price Range Legend</h4>
+        <i style="color:green">●</i> € - Inexpensive<br>
+        <i style="color:blue">●</i> €€ - Moderate<br>
+        <i style="color:orange">●</i> €€€ - Expensive<br>
+        <i style="color:red">●</i> €€€€ - Very Expensive
+    </div>
+    
+    
+            <div class="folium-map" id="map_a8607bd72355e9044389d91d7925b7d6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a8607bd72355e9044389d91d7925b7d6 = L.map(
+                "map_a8607bd72355e9044389d91d7925b7d6",
+                {
+                    center: [41.8719, 12.5674],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_20f8398621ce43bde98c11bb643ed36e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_20f8398621ce43bde98c11bb643ed36e.addTo(map_a8607bd72355e9044389d91d7925b7d6);
+        
+    
+            var marker_1fe87265a2dd4927a0fe924ff69b2f56 = L.marker(
+                [37.5023612, 15.0873718],
+                {}
+            ).addTo(map_a8607bd72355e9044389d91d7925b7d6);
+        
+    
+            var icon_436042fa9933ff3cf1fc25773f88d6da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1fe87265a2dd4927a0fe924ff69b2f56.setIcon(icon_436042fa9933ff3cf1fc25773f88d6da);
+        
+    
+        var popup_d4346200fdb2183a73e0a79dbccdc5b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c526204c8986123c70de836485db97a5 = $(`<div id="html_c526204c8986123c70de836485db97a5" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Ménage<br><b>City:</b> Catania<br><b>Region:</b> Sicilia<br><b>Price Range:</b> €€</div>`)[0];
+                popup_d4346200fdb2183a73e0a79dbccdc5b9.setContent(html_c526204c8986123c70de836485db97a5);
+            
+        
+
+        marker_1fe87265a2dd4927a0fe924ff69b2f56.bindPopup(popup_d4346200fdb2183a73e0a79dbccdc5b9)
+        ;
+
+        
+    
+    
+            var marker_0ab348a03f375733cf899181c94f3a13 = L.marker(
+                [39.2536724, 16.6978044],
+                {}
+            ).addTo(map_a8607bd72355e9044389d91d7925b7d6);
+        
+    
+            var icon_611dd767e9db9f3556526ca88237d792 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0ab348a03f375733cf899181c94f3a13.setIcon(icon_611dd767e9db9f3556526ca88237d792);
+        
+    
+        var popup_613a0024cba93eff79311208eddf4c0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_880479d01038c06d21b7e0ac982ce731 = $(`<div id="html_880479d01038c06d21b7e0ac982ce731" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Hyle<br><b>City:</b> San Giovanni in Fiore<br><b>Region:</b> Calabria<br><b>Price Range:</b> €€€€</div>`)[0];
+                popup_613a0024cba93eff79311208eddf4c0a.setContent(html_880479d01038c06d21b7e0ac982ce731);
+            
+        
+
+        marker_0ab348a03f375733cf899181c94f3a13.bindPopup(popup_613a0024cba93eff79311208eddf4c0a)
+        ;
+
+        
+    
+    
+            var marker_9240c3886702e8f28279a58ce9fbe53f = L.marker(
+                [41.8933203, 12.4829321],
+                {}
+            ).addTo(map_a8607bd72355e9044389d91d7925b7d6);
+        
+    
+            var icon_33f246c4bfe1db06d93ebbe70f2c62e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9240c3886702e8f28279a58ce9fbe53f.setIcon(icon_33f246c4bfe1db06d93ebbe70f2c62e3);
+        
+    
+        var popup_ce04549d15641200fe24fe698a296819 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a35e115d49b15031570fc28cd65c698c = $(`<div id="html_a35e115d49b15031570fc28cd65c698c" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Il Sanlorenzo<br><b>City:</b> Rome<br><b>Region:</b> Lazio<br><b>Price Range:</b> €€€€</div>`)[0];
+                popup_ce04549d15641200fe24fe698a296819.setContent(html_a35e115d49b15031570fc28cd65c698c);
+            
+        
+
+        marker_9240c3886702e8f28279a58ce9fbe53f.bindPopup(popup_ce04549d15641200fe24fe698a296819)
+        ;
+
+        
+    
+    
+            var marker_55ff7cef5e6fee88799b2566f99a9a84 = L.marker(
+                [44.40726, 8.9338624],
+                {}
+            ).addTo(map_a8607bd72355e9044389d91d7925b7d6);
+        
+    
+            var icon_90a6ff1c9e94ef88acb01c8b21e21096 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_55ff7cef5e6fee88799b2566f99a9a84.setIcon(icon_90a6ff1c9e94ef88acb01c8b21e21096);
+        
+    
+        var popup_4f7701d50144f99ea8b68098e66b3745 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84d532ff1882334cdd17981289bcc52f = $(`<div id="html_84d532ff1882334cdd17981289bcc52f" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> San Giorgio<br><b>City:</b> Genoa<br><b>Region:</b> Liguria<br><b>Price Range:</b> €€€</div>`)[0];
+                popup_4f7701d50144f99ea8b68098e66b3745.setContent(html_84d532ff1882334cdd17981289bcc52f);
+            
+        
+
+        marker_55ff7cef5e6fee88799b2566f99a9a84.bindPopup(popup_4f7701d50144f99ea8b68098e66b3745)
+        ;
+
+        
+    
+    
+            var marker_6ae47651b52c3011e5b4672ef699047f = L.marker(
+                [43.3056365, 12.3366222],
+                {}
+            ).addTo(map_a8607bd72355e9044389d91d7925b7d6);
+        
+    
+            var icon_f1effc278e9562ebafc38352352e8c5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6ae47651b52c3011e5b4672ef699047f.setIcon(icon_f1effc278e9562ebafc38352352e8c5c);
+        
+    
+        var popup_4a474697bb6d9ccf0340bb05a35e3774 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0528844910f70bbabf644770903daec6 = $(`<div id="html_0528844910f70bbabf644770903daec6" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> San Giorgio<br><b>City:</b> Umbertide<br><b>Region:</b> Umbria<br><b>Price Range:</b> €€€</div>`)[0];
+                popup_4a474697bb6d9ccf0340bb05a35e3774.setContent(html_0528844910f70bbabf644770903daec6);
+            
+        
+
+        marker_6ae47651b52c3011e5b4672ef699047f.bindPopup(popup_4a474697bb6d9ccf0340bb05a35e3774)
+        ;
+
+        
+    
+    
+            var marker_527ed9b19d87ce4449e19ff8e032ce59 = L.marker(
+                [46.1620434, 12.8089746],
+                {}
+            ).addTo(map_a8607bd72355e9044389d91d7925b7d6);
+        
+    
+            var icon_e50110a281ee451693b6cfdfcea442e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_527ed9b19d87ce4449e19ff8e032ce59.setIcon(icon_e50110a281ee451693b6cfdfcea442e9);
+        
+    
+        var popup_5938ec8b5c79bab6d3d414afa0526893 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40a7cd5401d4d875f8239984da9fd89b = $(`<div id="html_40a7cd5401d4d875f8239984da9fd89b" style="width: 100.0%; height: 100.0%;"><b>Restaurant:</b> Tenne Lodges<br><b>City:</b> Colle<br><b>Region:</b> Friuli-Venezia Giulia<br><b>Price Range:</b> €€€</div>`)[0];
+                popup_5938ec8b5c79bab6d3d414afa0526893.setContent(html_40a7cd5401d4d875f8239984da9fd89b);
+            
+        
+
+        marker_527ed9b19d87ce4449e19ff8e032ce59.bindPopup(popup_5938ec8b5c79bab6d3d414afa0526893)
+        ;
+
+        
+    
+</script>
+</html>
